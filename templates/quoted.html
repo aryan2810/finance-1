@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Response
+{% endblock %}
+
+{% block main %}
+    <div class="mb-3">
+        <h2>NAME</h2>
+        {{lookup_response["name"]}}
+    </div>
+
+    <div>
+        <h2>PRICE</h2>
+        {{lookup_response["price"]}}</div>
+    <div>
+        <h2>SYMBOL</h2>
+        {{lookup_response["symbol"]}}
+    </div>
+
+
+{% endblock %}
