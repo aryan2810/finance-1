@@ -103,7 +103,7 @@ def buy():
                        user_id=session["user_id"], symbol=request.form.get("symbol").upper(), shares=request.form.get('shares'), price=lookup_response['price'])
             db.execute("UPDATE users SET cash=:new_cash WHERE id=:user_id",
                        new_cash=(user_cash-total_cost), user_id=session["user_id"])
-            return redirect("/")
+            return redirect("/buy")
 
 
 @app.route("/cash", methods=["GET", "POST"])
