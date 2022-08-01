@@ -6,6 +6,10 @@ I have used an API IEXCLOUD to fetch live data about the stock prices in real ti
 
 -You can buy, sell and check your portfolio.
 
+-Tech Stack:
+  Backend - Flask 
+  Front End- HTML, CSS and JavaScript
+
 -Images:
 
 
